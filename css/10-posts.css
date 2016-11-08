@@ -1,1 +1,67 @@
 /* PHASE 10: Posts */
+
+/*Crush this using semantic
+tags and your floating skills.
+How about using pseudo-content 
+to inject little bullets · in between
+the list items?*/
+
+.posts{
+	position:relative;
+	display:block;
+	width:100%;
+	margin: 20px 0 0 0;
+}
+
+
+.post{
+	float:left;
+  border-top: 1px solid #ccc;
+  margin: 0px 0 0 0;
+  padding: 20px 0 0 0;
+ }
+
+ .post-body {
+  float: left;
+  margin: 0 0 0 20px;
+  width: 540px;
+}
+
+
+.post-body > h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+.post-info{
+	margin: 20px 0 20px 0;
+	float:left;
+	color: #aaa;
+}
+
+.post-info li{
+	float:left;
+	font-size:14px;
+}
+
+.post-info li:after{
+	content: "·";
+	padding: 0px 5px;
+}
+
+.post-info li:last-child:after{
+	content: none;
+}
+
+.post-actions{
+	margin: 20px 0 20px 0;
+	float:right;
+	color: black;
+}
+
+.post-actions > li{
+	float:left;
+	font-size:16px;
+	padding: 0 0 0 10px;
+}
