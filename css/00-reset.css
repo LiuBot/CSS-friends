@@ -50,6 +50,10 @@ input[type="submit"] {
 
 /* Clearfix */
 
+a{
+	cursor: pointer;
+}
+
 .group:after {
 	content: "";
 	display: block;
