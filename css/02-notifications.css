@@ -1,1 +1,52 @@
 /* PHASE 2: Notifications */
+
+
+.badge{ /* makes a number enclosed in a circle*/
+	display: inline;
+  font-size: 14px;
+  padding: 1px 6px;
+  background: #000;
+  border-radius: 50%;
+  margin-left:4px;
+}
+
+li:hover .badge{ /* change badge color when hovered*/
+	background: #f00;
+}
+
+.header{
+	position: relative;
+	z-index: 1;
+}
+
+.notifications{
+	display:none;
+	position:absolute; /* choose absolute so list is in front of 
+	static elements in the background*/
+	cursor:pointer;
+	flex-direction:column;
+	font-size:14px;
+	border:  #aaa 1px solid;
+	background-color:#fff;
+	border-bottom: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+	border-left: 1px solid #aaa;
+}
+
+li:hover .notifications{
+	display:block;
+}
+
+.notifications:hover{
+	display:flex;
+}
+
+.notifications > li{ /* lines between notifs*/
+	color: #000;
+	border-top: 1px solid #ccc
+}
+
+.notifications > li:hover {
+	background-color: #eee;
+
+}

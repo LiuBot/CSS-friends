@@ -20,6 +20,7 @@ span, article, footer, time, small {
 
 } 
 
+
 ul {
 	list-style: none;
 }
@@ -36,6 +37,7 @@ input[type="text"],
 input[type="submit"],
 textarea,
 button {
+	/*- cancel platform-native styling based on the operating system's theme*/
 	-webkit-appearance: none;
 	-moz-appearance: none;
 }
