@@ -5,10 +5,6 @@
   <title>App Academy Friends</title>
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet"> <!--- from Google fonts -->
-  <script src="../shared/js/jquery.js"></script>
-  <script>
-
-  </script>
 
   <link rel="stylesheet" href="css/00-reset.css" type="text/css">
   <link rel="stylesheet" href="css/01-header.css" type="text/css">
@@ -48,6 +44,8 @@
             </li>
           <li><a href="#">Profile</a></li>
           <li><a href="#">Settings</a></li>
+           <li><a href="#" class="js-modal-open">Sign In</a></li>
+       
         </ul>
 
     </nav>
@@ -130,7 +128,7 @@
   <br>
     <textarea class="input answer-field">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
 
-    <input type="submit" value="Post To Wall"> or 
+    <input class="green-button" type="submit" value="Post To Wall"> or 
     <strong class="cancel-button"> Cancel </strong>
   </form>
 
@@ -261,6 +259,54 @@
     </ul>
 
   </footer>
+
+  <!-- Modal -->
+<div class="modal is-open">
+  <form class="modal-form">
+
+    <span class="exit-button js-modal-close">&times;</span>
+
+    <h1>Welcome</h1>
+    <p>Please sign in to continue.</p>
+    <br>
+
+<div class="input">
+    <label class="input-header">Email</label>
+    <input type="text" class="answer-field"
+    value="sennacy@appacademy.io">
+
+</div>
+
+<div class="input">
+    <label class="input-header">Password</label>
+    <input  type="password" class="answer-field" value="12345678">
+</div>
+
+  <input class="green-button" type="submit" value="Sign In"> or 
+<strong class="cancel-button js-modal-close">Cancel</strong>
+
+  </form>
+  <div class="modal-screen js-modal-close"></div>
+</div>
+
+<!-- Script for exiting the modal -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> <!--- jquery script -->
+
+<script>
+$(function(){
+
+  $("body").on("click", ".js-modal-open", function(event){
+    event.preventDefault();
+    $(".modal").addClass("is-open");
+  });
+
+  $("body").on("click", ".js-modal-close", function(event){
+    event.preventDefault();
+    $(".modal").removeClass("is-open");
+  });
+
+});
+</script>
 
 </body>
 </html>
