@@ -2,7 +2,7 @@
 
 
 .content-header{
-	z-index:0;
+	z-index:1;
 	position:relative;
 	height: 200px;
   background-image: url("../shared/cats.jpg");
@@ -32,4 +32,8 @@
 	background:#fff;
 	padding:10px 20px;
 	border: 1px solid black;
+}
+
+.add-friend-button:hover{
+	background:  #eee;
 }

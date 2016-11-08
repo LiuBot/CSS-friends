@@ -1,1 +1,79 @@
 /* PHASE 9: Forms */
+
+
+/*Reuse your .thumb class. Float the thumbnail and the form 
+next to each other. Wrap your inputs and labels in 
+container elements with an .input class. Wrap the button in 
+a .submit container. Style them so you can reuse them. Pay 
+special attention to the :focus and ':active' 
+pseudo-classes.*/
+
+
+.me{
+	position: relative;
+  float: left;
+	display:block;
+	border: 1px solid black;
+  width: 58px;
+  height:58px;
+  margin: 0 0px 0px 0;
+  border-radius:5px;
+}
+
+.post-form{
+	width:500px;
+	float:left;
+	display:block;
+	padding:19px;
+	border: 1px solid #ccc;
+	border-radius:5px;
+	margin: 0 0 0 20px;
+	background: #eee;
+}
+
+.input-header{
+	font-weight:700;
+}
+
+
+.answer-field{
+	width:96%;
+	background: white;
+	border-radius:5px;
+	margin:5px 0 20px 0;
+	padding:10px;
+	border: 1px solid #ccc;
+}
+
+.answer-field:hover{
+	border: 1px solid #0c0;
+}
+
+textarea{
+	height:120px;
+}
+
+input[type="submit"]{
+	background:#0c0;
+	font-weight:700;
+	color: white;
+	padding:10px 20px;
+	border-radius:5px;
+	margin:0 10px 0 0;
+	box-shadow: 0px 3px #070;
+}
+
+input[type="submit"]:active{
+	transform:translateY(3px);
+	background: #0a0;
+	box-shadow: 0px 0px;
+}
+
+.cancel-button{
+	font-weight:bold;
+	padding: 0 5px 0 5px;
+}
+.cancel-button:hover{
+	color: #f00;
+	cursor:pointer;
+}

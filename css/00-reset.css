@@ -21,9 +21,10 @@ span, article, footer, time, small {
 } 
 
 
-ul {
+ul, ol {
 	list-style: none;
 }
+
 
 img {
 	display:block;
